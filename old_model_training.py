@@ -7,6 +7,11 @@ import pickle
 import json
 import os
 
+
+# 🛠 Image Preprocessing
+# Resize all input images to 224x224.
+# You can change this size, but 224x224 gives a good balance
+# between accuracy and performance in most models.
 # إعداد التحويلات للصور
 transform = transforms.Compose([
     transforms.Resize((224, 224)),

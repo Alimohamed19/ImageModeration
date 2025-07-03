@@ -1,0 +1,10 @@
+torch
+torchvision
+tensorflow
+numpy
+opencv-python
+pillow
+scikit-learn
+matplotlib
+requests
+beautifulsoup4

@@ -5,7 +5,7 @@ from torchvision import transforms
 import torch.nn.functional as F
 
 # تحميل النموذج
-with open("./modelAi/image_classifier_best.pkl", "rb") as file:
+with open("./models/image_classifier_best.pkl", "rb") as file:
     model = pickle.load(file)
 
 model.eval()  # وضع التقييم

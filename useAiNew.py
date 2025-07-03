@@ -8,7 +8,7 @@ import os
 # تحميل النموذج مرة واحدة
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
-with open("./modelsendd/image_classifier3.pkl", "rb") as file:
+with open("./models/image_classifier3.pkl", "rb") as file:
     model = pickle.load(file).to(device)
 model.eval()  # وضع النموذج في وضع التقييم
 

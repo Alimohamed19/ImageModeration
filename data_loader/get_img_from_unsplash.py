@@ -2,6 +2,24 @@ import os
 import requests
 import time
 
+
+"""
+📄 get_img_from_unsplash.py
+
+🔹 وظيفة الملف:
+تحميل الصور من موقع Unsplash باستخدام API رسمي.
+
+🔧 أهم المتغيرات:
+- ACCESS_KEY = "..." → ضع مفتاح API الخاص بك (مجاني على موقع Unsplash).
+- query = "Humans" → الكلمة المفتاحية للبحث.
+- save_folder = "unsplash_images" → مجلد حفظ الصور.
+- total_images = عدد الصور الإجمالي المطلوب.
+- per_page = 30 → الحد الأقصى لكل طلب.
+
+💡 مفيد جدًا لجمع بيانات مجانية بدقة عالية.
+"""
+
+
 ACCESS_KEY = "" #unsplash API access key
 save_folder = "unsplash_images"
 os.makedirs(save_folder, exist_ok=True)

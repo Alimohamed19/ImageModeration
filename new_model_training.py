@@ -6,6 +6,11 @@ from torch.utils.data import DataLoader
 import pickle
 import json
 
+# 🛠 Image Preprocessing
+# Resize all input images to 224x224.
+# You can change this size, but 224x224 gives a good balance
+# between accuracy and performance in most models.
+
 # إعداد التحويلات للصور (تصغير + تحويل إلى Tensor)
 transform = transforms.Compose([
     transforms.Resize((224, 224)),  # توحيد حجم الصور
@@ -41,7 +46,7 @@ optimizer = optim.Adam(model.parameters(), lr=0.0005)
 # تدريب النموذج
 epochs = 10
 best_loss = float("inf")  # تعيين قيمة عالية في البداية
-best_model_path = "image_classifier6.pkl"
+best_model_path = "image_classifier.pkl"
 
 for epoch in range(epochs):
     running_loss = 0.0
